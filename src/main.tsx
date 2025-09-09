@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import { AppLayout } from './ui/AppLayout';
 import { LandingPage } from './pages/LandingPage';
@@ -13,7 +13,7 @@ import { CommunityPage } from './pages/CommunityPage';
 import { DestinationUtilitiesPage } from './pages/DestinationUtilitiesPage';
 import { ItineraryPage } from './pages/ItineraryPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <AppLayout />,
     children: [
